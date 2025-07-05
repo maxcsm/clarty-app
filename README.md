@@ -10,5 +10,5 @@ _____
 - Framework frontend : Angular 
 
 ## 📦 Installation
-
+npm install 
 
