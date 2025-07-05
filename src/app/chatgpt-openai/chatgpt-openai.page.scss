@@ -1,0 +1,83 @@
+.roundedInput  {
+           
+    --border-color: gray;
+    --border-radius: 5px;
+    --border-width: 2px;
+    --box-shadow: 2px gray;
+    --highlight-height: 0;
+    --background: #ffffff;
+    padding:2%;
+    height: 50px;
+   }
+
+   ion-boutton{
+    text-transform: capitalize;
+}
+
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .user .message-bubble {
+    background-color: #d7d7d7;
+    align-self: flex-end;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px 0;
+    max-width: 70%;
+    white-space: pre-line;
+
+  }
+  
+
+  .assistant .message-bubble {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    align-self: flex-start;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+    line-height: 1.0;
+    margin: 5px 0;
+    max-width: 70%;
+    white-space: pre-line;
+  }
+    
+
+  .ai .message-bubble {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    align-self: flex-start;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+    line-height: 1.0;
+    margin: 5px 0;
+    max-width: 70%;
+    white-space: pre-line;
+  }
+  
+
+ion-content {
+  background-color: white !important;
+}
+
+
+.chat-input-item {
+  --background: #f1f1f1;
+  --border-radius: 25px;
+  padding: 4px 10px;
+  margin: 8px;
+  align-items: center;
+  border: 0pxx solid #ccc;
+}
+
+.chat-input {
+  --padding-start: 10px;
+  --padding-end: 10px;
+  font-size: 16px;
+  height: 50px;
+}

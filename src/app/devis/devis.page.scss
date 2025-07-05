@@ -1,0 +1,24 @@
+.pictureRound {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
+  
+  
+  }
+
+
+  @keyframes subtle-zoom {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
+  .zoom-effect {
+    animation: subtle-zoom 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+  }
+  

@@ -1,0 +1,87 @@
+<ion-header >
+  <ion-toolbar >
+    <ion-title  class="fade-in delay-1 ion-text-center"> <h4> Bienvenue </h4></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid class="animate__animated animate__fadeInDown">
+
+
+
+        <ion-card class="login-card">
+          <ion-card-header>
+            <ion-card-title class="ion-text-center">
+              <img src="assets/logo.png" style="height: 150px;" alt="Logo Clarty" />
+            </ion-card-title>
+            <p class="ion-text-center ion-padding-top">Connectez-vous pour continuer</p>
+          </ion-card-header>
+
+          <ion-card-content>
+            <form [formGroup]="onLoginForm">
+
+              <ion-item lines="inset">
+                <ion-icon name="mail-outline" slot="start"></ion-icon>
+                <ion-label position="floating">Email</ion-label>
+                <ion-input type="email" [(ngModel)]="email" formControlName="email"></ion-input>
+              </ion-item>
+              <ion-text color="danger" *ngIf="onLoginForm.get('email')?.invalid && onLoginForm.get('email')?.touched">
+                <p class="ion-padding-start">* Email requis</p>
+              </ion-text>
+
+              <ion-item lines="inset" class="ion-margin-top">
+                <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+                <ion-label position="floating">Mot de passe</ion-label>
+                <ion-input type="password" [(ngModel)]="password" formControlName="password"></ion-input>
+              </ion-item>
+              <ion-text color="danger" *ngIf="onLoginForm.get('password')?.invalid && onLoginForm.get('password')?.touched">
+                <p class="ion-padding-start">* Mot de passe requis</p>
+              </ion-text>
+
+              <ion-button expand="block" shape="round" class="ion-margin-top" [disabled]="!onLoginForm.valid"
+                (click)="goLogin()">
+                Connexion
+              </ion-button>
+
+              <div class="ion-text-center ion-margin-top">
+                <a [routerLink]="['/forgotpassword']">
+                  <ion-text color="medium"><strong>Mot de passe oublié ?</strong></ion-text>
+                </a>
+              </div>
+
+              <ion-button expand="block" shape="round" fill="outline" color="primary" class="ion-margin-top"
+                [routerLink]="['/register']">
+                Inscription
+              </ion-button>
+
+            </form>
+          </ion-card-content>
+        </ion-card>
+
+ 
+
+
+
+      
+
+        <ion-button expand="block" color="danger" (click)="loginWithGoogle()" style="display:none">
+          <ion-icon name="logo-google" slot="start"></ion-icon>
+          Connexion avec Google
+        </ion-button>
+
+
+            
+        <ion-button expand="block" color="medium" (click)="loginWithApple()">
+          <ion-icon name="logo-apple" slot="start"></ion-icon>
+          Connexion avec Apple
+        </ion-button>
+      
+
+
+        
+   
+  
+  </ion-grid>
+
+</ion-content>

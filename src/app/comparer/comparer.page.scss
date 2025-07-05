@@ -1,0 +1,63 @@
+.pictureRound {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
+  
+  
+  }
+
+
+  @keyframes subtle-zoom {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
+  .zoom-effect {
+    animation: subtle-zoom 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+  }
+  
+
+  ion-item {
+    --padding-start: 16px;
+    --inner-padding-end: 16px;
+    --min-height: 64px;
+  }
+  ion-icon {
+    font-size: 24px;
+    color: var(--ion-color-secondary);
+  }
+  ion-label h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  ion-label .category {
+    margin: 2px 0 0;
+    font-size: 0.85rem;
+ 
+  }
+  ion-badge {
+    font-size: 0.9rem;
+    padding: 0 8px;
+  }
+
+
+  ion-segment {
+    --background: #e0e0e0;
+    --color: #555;
+    --color-checked: #d32f2f;       /* rouge */
+    --indicator-color: #d32f2f;
+  }
+
+
+
+   .category{
+      color: #040404;
+  } 
+

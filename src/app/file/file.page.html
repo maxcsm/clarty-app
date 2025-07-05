@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar  lines="none">
+    <ion-buttons slot="start">
+      <ion-back-button color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title> <h4>Détails du fichier </h4> </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+
+<ion-row>
+  <ion-col sizeLg="6" sizeMd="6" sizeXs="12" >
+
+    <ion-card  *ngFor="let item of posts">
+      <ion-card-header>
+        <ion-button expand="block" fill="outline" >{{item.category}}</ion-button>
+        Nom : <b> {{item.title}} </b><br>
+        Categorie : <b> {{item.category}} </b><br>
+
+        Date de dépôt  :  <b>{{item.created_at | date:'dd-MM-yyyy' }} à {{item.created_at | date:'HH:mm' }}</b><br>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-button icon-left size="primary" expand="full" shape="round"  (click)="CreateAssistantThreadByFile()" >  <ion-icon name="chatbubbles-outline"></ion-icon> Commencer une conversation </ion-button>
+
+    <ion-card  *ngFor="let item of posts">
+      <ion-card-content>
+        <div  [innerHtml]="htmlFormattedText"></div>
+      </ion-card-content>
+
+
+      <img src="{{item.image}}"  *ngIf="item.image">
+    
+    </ion-card>
+
+
+
+
+             
+  </ion-col>
+      
+    <ion-col sizeLg="6" sizeMd="6" sizeXs="12" >
+    </ion-col>
+    </ion-row>
+</ion-content>

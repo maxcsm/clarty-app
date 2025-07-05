@@ -1,0 +1,68 @@
+
+
+<ion-header>
+  <ion-toolbar lines="none">
+    <ion-buttons   slot="start">
+      <ion-menu-button color="primary"></ion-menu-button>
+    </ion-buttons>
+
+
+    <ion-buttons slot="end" class="fade-in delay-1" (click)="CreateAssistantThreadByFile()">
+     <h4> Créer un nouvelle discussion </h4>
+
+      <ion-icon color="primary" name="add-circle-outline" style="font-size: 30px;right:0px;"></ion-icon>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content >
+  <ion-grid>
+    <ion-row class="padding">
+    <ion-col sizeLg="3" sizeMd="3" sizeXs="0"  >
+    </ion-col>
+
+    <ion-col sizeLg="6" sizeMd="6" sizeXs="12" style="border: 2px;border-width: 2px; text-align: center;"  >
+
+
+    <ion-list *ngFor="let item of posts" >
+    <ion-item button  class="text-wrap"  > 
+    <img src="{{item.image}}" style="height:50px; padding-bottom: 4px;"  slot="start" *ngIf="item.image">
+
+
+    <ion-label (click)="nextFile($event, item)">
+
+   <h2 > {{item.title}} </h2>
+   <small>{{item.created_at | date:'dd-MM-yyyy' }} à {{item.created_at | date:'HH:mm' }}</small><br>
+   <ion-button size="small"  fill="outline" >{{item.category}}</ion-button> <br>
+
+    </ion-label>
+
+
+    <ion-button ion-button outline item-end small color="light" (click)="delete($event, item)"><ion-icon name="trash-outline"></ion-icon></ion-button>
+    </ion-item>
+    </ion-list>
+
+    </ion-col>
+
+    <ion-col sizeLg="3" sizeMd="3" sizeXs="0"  >
+   </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+
+
+
+</ion-content>
+
+
+<ion-popover trigger="click-trigger" triggerAction="click">
+  <ng-template>
+    <ion-content class="ion-padding"> Créer un nouvel assistant avec tous mes fichiers 
+      <ion-button fill="solid" triggerAction="click" (click)="CreateAssistantThreadByFile()" > Oui </ion-button>
+    </ion-content>
+  </ng-template>
+</ion-popover>

@@ -1,0 +1,7 @@
+{
+  "name": "ParisBoatClub",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

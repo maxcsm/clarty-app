@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar >
+ 
+    <h4 class="fade-in delay-1" style="padding: 10px 0 0 10px; font-weight: bold;text-align: left;">
+      <span >  Comparer et économiser</span>
+    </h4>
+     
+    <h6 class="fade-in delay-2" style="padding-left: 10px; padding-right: 10%; text-align:left;">  
+      Comparez mieux, payez moins
+    </h6>
+   
+ 
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="ion-padding" >
+  <ion-grid>
+    <ion-row >
+    <ion-col sizeLg="3" sizeMd="3" sizeXs="0"  >
+    </ion-col>
+
+    <ion-col sizeLg="6" sizeMd="6" sizeXs="12" style="border: 2px;border-width: 2px; text-align: center;"  >
+
+
+  
+       
+              <ion-list>
+                <ion-item *ngFor="let item of offres" button lines="full" detail="false">
+
+
+
+
+                  <ion-icon name="business-outline" slot="start"></ion-icon>
+                  <ion-label>
+
+                  <h2 style="color:black">  {{ item.category }}</h2>
+                    <h2 style="color:black">{{ item.company_name }}</h2>
+                    <small>{{ item.title }}</small>
+                    <h2 style="color:black">{{ item.price }}</h2>
+                  </ion-label>
+                  <ion-badge slot="end" color="primary">{{ item.price }}</ion-badge>
+                </ion-item>
+              </ion-list>
+           
+    
+          
+          
+
+    
+        
+   
+
+   
+
+     
+   
+
+    </ion-col>
+
+    <ion-col sizeLg="3" sizeMd="3" sizeXs="0"  >
+   </ion-col>
+  </ion-row>
+
+
+ 
+
+
+
+
+
+</ion-grid>
+
+
+
+
+
+</ion-content>

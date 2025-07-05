@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar >
+  
+    <ion-title class="fade-in delay-1" color="primary">Profil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  <!-- Avatar centré -->
+  <div class="avatar-container fade-in delay-1">
+    <img src="assets/user.png" alt="Avatar" class="avatar-img" />
+  </div>
+
+  <ion-grid class="fade-in delay-2">
+    <ion-row class="ion-justify-content-center">
+      <ion-col sizeLg="6" sizeMd="8" sizeSm="12">
+
+        <!-- Section Profil -->
+        <ion-card class="profile-card animate__animated animate__fadeInUp">
+          <ion-card-header>
+            <ion-card-title>👤 Mon profil</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item button [routerLink]="['/my-address']">
+              <ion-icon color="primary" slot="start" name="list-circle" size="large"></ion-icon>
+              <ion-label>Mes coordonnées</ion-label>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+
+        <!-- Section A propos -->
+        <ion-card class="profile-card animate__animated animate__fadeInUp delay-2">
+          <ion-card-header>
+            <ion-card-title>ℹ️ À propos de Clarity</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item button>
+              <ion-icon color="primary" slot="start" name="mail" size="large"></ion-icon>
+              <ion-label>Nous contacter</ion-label>
+            </ion-item>
+            <ion-item button target="_blank">
+              <ion-icon color="primary" slot="start" name="bulb" size="large"></ion-icon>
+              <ion-label>Politique de confidentialité</ion-label>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+
+        <!-- Bouton Supprimer -->
+        <ion-button color="secondary" expand="block" shape="round" class="animate__animated animate__fadeInUp delay-3"
+          (click)="delete()">
+          Supprimer mon compte
+        </ion-button>
+
+
+        <ion-button color="primary" expand="block" style="padding-top: 10px;" shape="round" class="animate__animated animate__fadeInUp delay-3"
+        (click)="logout()">
+         Déconnexion
+      </ion-button>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

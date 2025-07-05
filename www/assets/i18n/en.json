@@ -1,0 +1,95 @@
+{
+    
+    "chooselanguage": "Choose language",
+    "french": "French",
+    "english": "English",
+    "italian": "Italian",
+    "spanish": "Spanish",
+
+    "home": "Home",
+    "map": "Map",
+    "list": "Points of Interest",
+    "services": "Services",
+    "settings": "Info",
+    "question": "Questions",
+    "boat": "Boat",
+    "legal":"Legal notices",
+"modeemploi":"Instructions",
+"modeemploi1":"Choose your language ",
+"modeemploi2":"Click on Visit ",
+"modeemploi3":"Choose your point of interest to display its description ",
+"modeemploi4":"See the list of all points of interest ",
+"modeemploi5":"Return to the home page by clicking on the icon at the bottom left ",
+"modeemploi6":"At any time return to the Main Menu by clicking on the icon at the top left",
+
+    "textintro": "Welcome aboard",
+    "textintro2": "Come and discover Paris from the Seine for memorable and unique moments", 
+    "textintro3": "Private cruise in Paris",
+
+
+    "music_title":"Music at will",
+    "security_title": "Security",
+    "comment_title": "Comments",
+    "frigo_title":"Refrigerator",
+    "video_title":"360° Video",
+    "luggage_title":"Luggage",
+    "toilettes_title":"Toilets on board!",
+
+    "wifi_content": "To connect to the wifi with Internet access, select the parisboatclub network and enter the following password parisboatclub And there you have it! Have a good cruise!!",
+    "music_content":" To connect your mobile with the Bluetooth speaker, activate the bluetooth and search for the device named ETTORE",
+    "security_content": "For each person, for each age, height and weight, our safety vests are present. For anyone who asks, they are at your disposal",
+    "comment_content": "During your cruise, if you wish, the skipper will inform you about the bridges and historical monuments that you see under which you pass",
+    "frigo_content":"Come on board with food and drinks! Our refrigerator will keep them cool For ice cubes, request them in advance",
+    "video_content":"On request only, it is possible to make a short video of your cruise. It will then be sent to you by email",
+    "luggage_content":"Do you have a train or plane to catch right after? No problem, we can keep your suitcases in the cabin on the boat during the cruise! Don't forget anything!",
+    "toilettes_content":"Toilets on board! For a peaceful cruise.",
+
+    "about_title":"About",
+    "about_content":"Paris Boat Club is happy to share with you on this platform the main and most beautiful Historic Monuments and Bridges of the city of Paris seen from the Seine. Details, an anecdote on the points encountered, everything that you need will allow you to enjoy sailing in the center of Paris and keep excellent memories of this cruise trip on the Seine. If, like us, you are passionate about navigation, this application is intended to be enriched with your comments, do not hesitate do not leave us a message at info@parisboatclub.fr.",
+    "cgu_title":"Privacy Policy",
+
+
+    "callme": "Call me",
+    "sendmessage": "Whatsapp",
+    "askquestion": "Ask your questions !",
+    "placequestion": "Your question here",
+
+
+    "loading": "Loading",
+    "profil": "Profil",
+    "successlogin": "Connection successfully",
+    "areyousure": "Are you sure ?",
+    "yes": "Yes",
+    "cancel": "Cancel",
+    "next": "Send",
+    "close": "Close",
+    "tovisit": "To visit",
+    "ourstairs": "Our stopovers",
+    "otherstops": "Other stops in Paris",
+    "share": "Share",
+    "note": "Rate the App",
+    "myposition": "My position",
+    
+    
+    "escale_1_title": "Paris Boat Club - Escale de Beaugrenelle",
+    "escale_1_content": "The Beaugrenelle stopover is located under the Pont de Grenelle, opposite the Statue of Liberty",
+    "escale_2_title": "Paris Boat Club – Escale du Louvre",
+    "escale_2_content": "The Escale du Louvre is located under the Pont du Carrousel, right next to the Escale Batobus du Louvre",
+    "escale_3_title": "Paris Boat Club - Escale Henri IV",
+    "escale_3_content": "The Escale Henri IV is located on the Quai Henri IV",
+  
+
+    "boat_1":" The ETTORE Boat",
+    "boat_2":"Our boat sails in Paris on the Seine and can carry up to 10 people, skipper(s) included.",
+    "boat_3":"It is a Jeanneau Camarat 7.5 CC Series 3. It is part of the outboard range of Jeanneau boats. Released in 2022 with very modern lines. It is perfectly suited for pleasure boating at sea or on rivers and allows you to sail in perfect comfort. Resulting from the pencil strokes of the Sarrazin Design firm, it is equipped with a rigid T-top with white aluminum uprights. A fluid circulation around the console allows easy and comfortable access to these two spaces.",
+    "boat_4":"The Central cabin also includes a toilet (WC) and can accommodate young children (maximum two) and offers a space to escape for a moment. See you soon!",
+
+    "shop":"The Shop ParisBoatClub",
+    "pictures":"Pictures ParisBoatClub",
+
+    "intro_escales":"It is possible to embark or disembark from one of these Stopovers, only on request when booking.", 
+
+    "geomap":"Would you like to geolocate your position ?",
+    "yes":"Yes",
+    "no":"No"
+    }

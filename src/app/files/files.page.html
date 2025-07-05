@@ -1,0 +1,97 @@
+<ion-header class="header-animate" id="page-header">
+  <ion-toolbar lines="none">
+    <h4 class="fade-in delay-1" style="padding: 10px 0 0 10px; font-weight: bold;text-align: left;">
+      <span >Téléchargez vos contrats et obtenez des réponses instantanées</span>
+    </h4>
+    <h6 class="fade-in delay-2"  style="padding-left: 10px; padding-right: 10%; text-align:left;">Ajouter depuis la galerie ou la caméra</h6>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content >
+  <ion-grid>
+    <ion-row class="padding">
+    <ion-col sizeLg="3" sizeMd="3" sizeXs="0"  >
+    </ion-col>
+
+    <ion-col sizeLg="6" sizeMd="6" sizeXs="12" style="border: 2px;border-width: 2px; text-align: center;"  >
+
+
+        <ion-row justify-content-center>
+        <ion-col sizeLg="12" sizeMd="12" sizeXs="12" >
+          <ion-row >
+     
+          </ion-row>
+
+
+          <ion-button type="submit" icon-left size="secondary" expand="full" shape="round"   (click)="presentUploadOptions()" style="text-transform:none!important;">    Ajouter un document</ion-button>
+
+          <img src="{{image}}" style="width:200px"  *ngIf="this.image">
+        
+          <input
+          type="file"
+          accept=".pdf"
+          #fileInput
+          style="display: none"
+          (change)="onFileSelected($event)"
+        />
+             
+            </ion-col>
+          </ion-row>
+    
+
+     
+
+          <ion-list *ngFor="let category of categories">
+
+            <!-- HEADER AVEC DROPDOWN ET COMPTEUR -->
+            <ion-item button class="text-wrap headerlist" lines="none" (click)="category.isOpen = !category.isOpen">
+              <img [src]="category.icon" style="width:50px; margin-right: 15px;">
+              {{ category.name }} ({{ getFileCount(category.name) }})
+              <ion-icon slot="end" [name]="category.isOpen ? 'chevron-up-outline' : 'chevron-down-outline'"></ion-icon>
+            </ion-item>
+          
+            <!-- CONTENU DU DROPDOWN -->
+            <div *ngIf="category.isOpen">
+              <ng-container *ngFor="let item of posts">
+                <ion-item *ngIf="item.category === category.name" class="text-wrap" lines="none" style="font-size: 10px;">
+                  <img *ngIf="item.image" [src]="item.image" style="height:50px;" slot="start">
+                  <img *ngIf="!item.image" src="../assets/icon/pdf.png" style="height:50px;" slot="start">
+              
+                  <ion-label (click)="nextFile($event, item)">
+                    Catégorie : <b>{{ item.category }}</b><br>
+                    Nom : <b>{{ item.title }}</b><br>
+                    Date de dépôt : <b>{{ item.created_at | date:'dd-MM-yyyy' }}</b>
+                    à <b>{{ item.created_at | date:'HH:mm' }}</b><br>
+                  </ion-label>
+              
+                  <ion-button fill="outline" slot="end" size="small" color="light" (click)="delete($event, item)">
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </ion-button>
+                </ion-item>
+              </ng-container>
+            </div>
+          
+          </ion-list>
+
+
+
+          
+
+             
+      
+ 
+      
+
+    </ion-col>
+
+    <ion-col sizeLg="3" sizeMd="3" sizeXs="0"  >
+   </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+
+
+
+</ion-content>

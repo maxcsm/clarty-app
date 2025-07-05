@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="fade-in delay-1"> Mes coordonnées </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+
+<ion-row>
+  <ion-col sizeLg="6" sizeMd="6" sizeXs="12" >
+
+
+    <ion-list lines="none"  >
+      <ion-row >
+        <ion-col sizeLg="12" sizeMd="12" sizeXs="12" >
+
+                    
+
+             <ion-row >
+            <ion-col sizeLg="2" sizeMd="2" sizeXs="12" >
+              <ion-item  class="roundedInput">
+                <ion-label position="stacked">Civ. </ion-label>
+                <ion-select multiple="false" [(ngModel)]="salutation">
+                  <ion-select-option value="M.">M.</ion-select-option>
+                  <ion-select-option value="Mme.">Mme.</ion-select-option>
+                </ion-select>
+              </ion-item>
+           </ion-col>
+            <ion-col sizeLg="5" sizeMd="5" sizeXs="12" >
+               <ion-item class="roundedInput">
+                 <ion-label color="dark" position="stacked">Nom</ion-label>
+                <ion-input inputmode="text"[(ngModel)]="lastname" placeholder="Nom" >  </ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col sizeLg="5" sizeMd="5" sizeXs="12" > 
+               <ion-item class="roundedInput">
+                <ion-label color="dark" position="stacked">Prénom</ion-label>
+                <ion-input inputmode="text"[(ngModel)]="firstname" placeholder="Prénom">  </ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        <ion-row >
+          <ion-col sizeLg="12" sizeMd="12" sizeXs="12" > 
+            <ion-item class="roundedInput">
+              <ion-label color="dark" position="stacked">Adresse</ion-label>
+              <ion-input inputmode="text"[(ngModel)]="address" placeholder="Adresse">  </ion-input>
+            </ion-item>
+          </ion-col>
+         </ion-row>
+    
+        <ion-row   >
+          <ion-col sizeLg="6" sizeMd="6" sizeXs="12" > 
+            <ion-item class="roundedInput">
+              <ion-label color="dark" position="stacked">CP</ion-label>
+              <ion-input inputmode="text"[(ngModel)]="cp" placeholder="Code postal">  </ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col sizeLg="6" sizeMd="6" sizeXs="12" > 
+            <ion-item class="roundedInput">
+              <ion-label color="dark" position="stacked">Ville</ion-label>
+              <ion-input inputmode="text"[(ngModel)]="city" placeholder="Ville">  </ion-input>
+            </ion-item>
+          </ion-col>
+         </ion-row>
+    
+    
+        <ion-row >
+          <ion-col sizeLg="6" sizeMd="6" sizeXs="12" > 
+            <ion-item class="roundedInput">
+              <ion-label color="dark" position="stacked"> Téléphone </ion-label>
+              <ion-input inputmode="phone"[(ngModel)]="phone_mobile" placeholder="mobile">  </ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col sizeLg="6" sizeMd="6" sizeXs="12" > 
+          </ion-col>
+         </ion-row>
+  
+          <ion-item >
+            <div class="item-note" slot="end">
+            <ion-button  size="medium" (click)="cancel()" >Annuler </ion-button>
+            <ion-button color="secondary" size="medium" (click)="doSave()">Enregistrer</ion-button>
+            </div>
+           </ion-item>
+        </ion-col>
+    </ion-row>
+    </ion-list>
+    
+    
+  </ion-col>
+      
+    <ion-col sizeLg="6" sizeMd="6" sizeXs="12" >
+    </ion-col>
+    </ion-row>
+</ion-content>

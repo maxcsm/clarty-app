@@ -1,0 +1,7 @@
+.rounded-tab-bar {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  /* Décoller un peu du bord */
+    overflow: hidden;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1); /* Optionnel : ombre pour effet flottant */
+  }

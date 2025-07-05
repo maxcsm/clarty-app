@@ -1,0 +1,35 @@
+.list-md {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    height: 1000px;
+
+
+}
+
+.item {
+    --color: initial;
+    display: block;
+    font-size: inherit;
+    text-overflow: ellipsis;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 20px;
+    height: 50px;
+}
+
+ion-header {
+    transition: all 0.3s ease;
+  }
+  
+  ion-header.shrink {
+    transform: scaleY(0.8);
+    opacity: 0.7;
+    background-color: var(--ion-color-light);
+  }

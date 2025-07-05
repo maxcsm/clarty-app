@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-toolbar  lines="none">
+    <ion-buttons   slot="start">
+      <ion-menu-button color="primary"></ion-menu-button>
+    </ion-buttons>
+
+
+
+    <ion-buttons slot="end" class="fade-in delay-1" (click)="CreateAssistantThreadByFile()">
+      <h4> Créer un nouvelle discussion </h4>
+ 
+       <ion-icon color="primary" name="add-circle-outline" style="font-size: 30px;right:0px;"></ion-icon>
+     </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content [scrollEvents]="true" [fullscreen]="true" #scrollArea  id="chat-content" style="background-color: white;height: 100%;">
+<ion-row style="background-color: white !important; height: 100%;" >
+
+  
+
+<ion-col sizeLg="12" sizeMd="12" sizeXs="12" style="background-color: white !important; padding-bottom: 200px;">
+  <div style="background-color: white !important">
+    <div *ngFor="let msg of messages" [ngClass]="msg.sender">
+      <div class="message-bubble ai"  *ngIf="msg.sender=='assistant'">
+        <div [innerHtml]="msg.text ">
+        </div>
+      </div>
+
+
+      <div class="message-bubble user"  *ngIf="msg.sender=='user'">
+        <div [innerHtml]="msg.text ">
+        </div>
+      </div>
+    </div>
+  <ion-spinner name="bubbles"  *ngIf="spinner==true"></ion-spinner>
+
+  </div>
+</ion-col>
+</ion-row>
+</ion-content>
+
+
+<ion-item lines="none" style="display: none;">
+  <div *ngIf="corrections.length > 0">
+    <div *ngFor="let err of corrections" style="margin-top: 10px;">
+      <ng-container *ngFor="let sug of err.suggestions">
+        <ion-button size="small" fill="outline" color="light" (click)="applySuggestion(err, sug)">
+          {{ sug }}
+        </ion-button>
+      </ng-container>
+    </div>
+  </div>
+       
+      </ion-item>
+
+
+
+<ion-footer class="chat-footer">
+  <ion-toolbar>
+
+    <ion-item lines="none" class="input-bubble">
+      <ion-input
+        [(ngModel)]="userInput"
+        (ionInput)="onInputChange()"
+        placeholder="Votre message..."
+        autocorrect="on"
+        spellcheck="true"
+        (keyup.enter)="askAI()"
+        class="instagram-input"
+        rows="4"
+        auto-grow="true"
+      ></ion-input>
+
+      <ion-button color="light"  slot="end" fill="clear" (click)="askAI()" class="send-btn">
+        <ion-icon name="send" color="primary"></ion-icon>
+      </ion-button>
+
+    
+    </ion-item>
+
+  </ion-toolbar>
+  <ion-toolbar>
+
+    <ion-item lines="none" class="input-bubble">
+
+
+
+      <div *ngIf="isListening" class="loader-container">
+        <ion-spinner name="dots"></ion-spinner>
+      </div>
+
+
+
+
+      <ion-button slot="end" color="light" *ngIf="!isListening" (click)="startListening()"><ion-icon name="mic-circle-outline"></ion-icon></ion-button>
+
+      <ion-button slot="end" color="light" *ngIf="isListening" (click)="stopListening()" ><ion-icon name="stop-circle-outline"></ion-icon></ion-button>
+    </ion-item>
+
+  </ion-toolbar>
+</ion-footer>

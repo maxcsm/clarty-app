@@ -1,0 +1,98 @@
+
+{
+
+
+ "chooselanguage": "Scegli la lingua",
+
+ "french": "Francese",
+ "english":  "Inglese",
+ "italian": "Italiano",
+ "spanish": "Spagnolo",
+
+ "home": "Casa",
+ "map":  "Mappa",
+ "list": "Punti di interesse",
+ "services":  "Servizi",
+ "settings": "Informazioni",
+ "question": "Domande",
+ "boat": "Barca",
+ "legal":"Avvisi legali",
+"modeemploi":"Come usare",
+ "modeemploi1":"Scegli la tua lingua",
+ "modeemploi2":"Fai clic su Visita",
+ "modeemploi3":"Scegli il tuo punto di interesse per visualizzarne la descrizione ",
+ "modeemploi4":"Vedi l'elenco di tutti i punti di interesse ",
+ "modeemploi5":"Torna alla home page cliccando sull'icona in basso a sinistra ",
+ "modeemploi6":"Torna in qualsiasi momento al Menu Principale cliccando sull'icona in alto a sinistra ",
+
+ "textintro": "Benvenuto a bordo",
+"textintro2": "Venite a scoprire Parigi dalla Senna per momenti indimenticabili e unici!",
+"textintro3": "Crociera privata a Parigi",
+
+ "music_title":"Musica a volontà",
+ "security_title": "Sicurezza",
+ "comment_title": "Commenti",
+ "frigo_title": "Frigorifero",
+ "video_title":"Video a 360°",
+ "luggage_title": "Bagagli",
+ "toilettes_title": "Toilette a bordo!",
+
+ "wifi_content": "Per connettersi al wifi con accesso a Internet, selezionare la rete parisboatclub e inserire la seguente password parisboatclub Ed ecco fatto! Buona crociera!!",
+ "music_content":" Per connettere il tuo cellulare all'altoparlante Bluetooth, attiva il bluetooth e cerca il dispositivo denominato ETTORE",
+ "security_content": "Per ogni persona, per ogni età, altezza e peso, sono presenti i nostri giubbotti di sicurezza. Per chiunque lo chieda, sono a vostra disposizione",
+ "comment_content": "Durante la tua crociera, se lo desideri, lo skipper ti informerà sui ponti e sui monumenti storici che vedi sotto i quali passi",
+ "frigo_content":"Sali a bordo con cibo e bevande! Il nostro frigorifero li manterrà freschi. Per i cubetti di ghiaccio, richiederli in anticipo",
+ "video_content":"Solo su richiesta è possibile realizzare un breve video della vostra crociera. Vi verrà poi inviato via email",
+ "luggage_content":"Hai un treno o un aereo da prendere subito dopo? Nessun problema, possiamo tenere le tue valigie nella cabina della barca durante la crociera! Non dimenticare nulla!",
+ "toilettes_content": "Toilette a bordo! Per una crociera tranquilla.",
+
+ "about_title": "Informazioni",
+ "about_content":"Il Paris Boat Club è felice di condividere con voi su questa piattaforma i principali e più bei monumenti e ponti storici della città di Parigi visti dalla Senna. Dettagli, un aneddoto sui punti incontrati, tutto ciò di cui avete bisogno permetterti di goderti la navigazione nel centro di Parigi e di conservare ottimi ricordi di questo viaggio in crociera sulla Senna Se, come noi, sei appassionato di navigazione, questa applicazione è destinata ad arricchirsi con i tuoi commenti, non esitare, non farlo lasciaci un messaggio a info@parisboatclub.fr.",
+ "cgu_title":"Politica sulla riservatezza",
+
+
+ "callme": "Chiamami",
+ "sendmessage": "Whatsapp",
+ "askquestion": "Fai le tue domande ? ",
+ "placequestion": "La tua domanda qui",
+
+
+
+ "loading": "Carico in corso",
+ "profil": "Profilo",
+ "successlogin": "Connection successfully",
+ "areyousure":"Sei sicuro?",
+ "yes":  "Sì",
+ "cancel":  "Annulla",
+ "next": "Chiedere",
+ "close": "Vicino",
+ "tovisit":"Da visitare", 
+ "ourstairs": "Le nostre fermate",
+ "otherstops": "Altre tappe a Parigi",
+ "share": "Condividere",
+ "note": " Valuta l'app",
+"myposition": "La mia posizione",
+
+
+
+ "escale_1_title": "Club nautico di Parigi - Escale de Beaugrenelle",
+ "escale_1_content": "Lo scalo Beaugrenelle si trova sotto il ponte Grenelle, di fronte alla Statua della Libertà", 
+ "escale_2_title": "Club nautico di Parigi – Escale du Louvre", 
+ "escale_2_content": "L'Escale del Louvre si trova sotto il ponte Carrousel, proprio accanto all'Escale del Louvre Batobus", 
+ "escale_3_title": "Club nautico di Parigi - Escale Henri IV",
+ "escale_3_content": "Lo scalo Henri IV si trova sul Quai Henri IV",
+
+ "boat_1": "La Barca ETTORE",
+ "boat_2": "La nostra barca naviga a Parigi sulla Senna e può trasportare fino a 10 persone, skipper incluso.",
+ "boat_3":"Si tratta di un Jeanneau Camarat 7.5 CC Serie 3. Fa parte della gamma di imbarcazioni fuoribordo Jeanneau. Uscito nel 2022 con linee molto moderne. Si adatta perfettamente al diporto in mare o sui fiumi e consente di navigare in comfort perfetto. Basato sui disegni di Sarrazin Design, è dotato di un T-top rigido con montanti in alluminio bianco. La circolazione del fluido attorno alla console consente un accesso facile e comodo a questi due spazi.",
+ "boat_4":"La cabina Centrale comprende anche un WC e può ospitare bambini piccoli (massimo due) e offre uno spazio per evadere un momento. A presto!",
+
+  "shop":"Il negozio ParisBoatClub",
+  "pictures":"Immagini ParisBoatClub",
+
+  "intro_escales":"È possibile imbarcarsi o sbarcare da uno di questi Scali, solo su richiesta al momento della prenotazione.",
+
+  "geomap":"Vuoi geolocalizzare la tua posizione?",
+"yes":"Sì",
+"no":"No"
+ }

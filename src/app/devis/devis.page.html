@@ -1,0 +1,123 @@
+<ion-header>
+  <ion-toolbar >
+ 
+    <h4 class="fade-in delay-1" style="padding: 10px 0 0 10px; font-weight: bold;text-align: left;">
+      <span >  Lire et analyser ses devis </span>
+    </h4>
+     
+    <h6 class="fade-in delay-2" style="padding-left: 10px; padding-right: 10%; text-align:left;">  
+      Téléchargez votre devis, l’IA vous dit tout
+    </h6>
+   
+ 
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="ion-padding" >
+  <ion-grid>
+    <ion-row >
+    <ion-col sizeLg="3" sizeMd="3" sizeXs="0"  >
+    </ion-col>
+
+    <ion-col sizeLg="6" sizeMd="6" sizeXs="12" style="border: 2px;border-width: 2px; text-align: center;"  >
+
+
+
+        <ion-item lines="none" style="
+        background: #ffffff;
+        border-radius: 30px;
+        padding: 30px 20px;
+        text-align: left;
+        margin: 5px 0px 0px 0px;" class="fade-in delay-3">
+        <h5 style="margin: 0;">   Téléchargez votre devis &
+          obtenez des réponses
+          instantanée
+        </h5>
+      
+      
+        </ion-item>
+
+
+        
+        <img src="assets/women5.png" class="pictureRound zoom-effect"  />
+
+        <ion-item lines="none" style="
+        background: #ffffff;
+        border-radius: 30px;
+        padding: 30px 20px;
+        text-align: left;
+        margin: 5px 0px 0px 0px;" class="fade-in delay-4">
+        <h5 style="margin: 0;">   Importez un devis, Clarty analyse les montants, identifie les garanties et le reste à charge réel.<br>
+
+          Vous voyez en un clin d’œil si c’est avantageux… ou non.
+        </h5>
+      
+      
+        </ion-item>
+
+        
+
+
+
+
+
+        <ion-row justify-content-center>
+        <ion-col sizeLg="12" sizeMd="12" sizeXs="12" >
+       
+
+
+              <ion-row >
+                <ion-col sizeLg="12" sizeMd="12" sizeXs="12" >
+               
+
+                  <ion-button expand="block" (click)="fileInput.click()" icon-left size="primary" expand="full" shape="round" style="text-transform:none!important;">
+                    Ajouter un fichier devis
+                  </ion-button>
+                  
+                  <input type="file" accept="application/pdf" #fileInput (change)="onFileSelected($event)" hidden />
+              </ion-col>
+              </ion-row>
+            </ion-col>
+
+
+            <ion-item lines="none" style="
+            background: #ffffff;
+            border-radius: 30px;
+            padding: 30px 20px;
+            text-align: left;
+            margin: 5px 0px 0px 0px;" class="fade-in delay-4">
+            <h5 style="margin: 0;">  L’IA compare même votre devis à votre contrat actuel pour vous alerter en cas d’incohérence.
+            </h5>
+          
+          
+            </ion-item>
+
+
+
+          </ion-row>
+    
+
+     
+
+   
+
+
+
+     
+ 
+      
+
+    </ion-col>
+
+    <ion-col sizeLg="3" sizeMd="3" sizeXs="0"  >
+   </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+
+
+
+</ion-content>

@@ -1,0 +1,40 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <!-- Menu latéral -->
+    <ion-menu type="overlay" menuId="menu1" contentId="main-content" (ionWillOpen)="onMenuOpen()" style="padding-top: 200px;"   >
+  
+      <ion-content  *ngIf="showAssitants" style="height:1000px;">
+        <!-- Liste dynamique des posts -->
+
+        <div style="margin-top: 200px;">
+
+      
+          <ion-item *ngFor="let item of posts" class="text-wrap"style="font-size: 14px;"(click)="nextFile($event, item)">
+            <ion-label>
+              <b>{{ item.title }}</b>
+            </ion-label>
+          </ion-item>
+ 
+
+          <ion-button expand="block" shape="round"  fill="outline" color="light" (click)="allassistants()" style="padding-top:50px;">
+            Voir tous les assitants
+          </ion-button>
+        </div>
+      </ion-content>
+
+      
+      <ion-content style="margin-top: 200px;" *ngIf="!showAssitants" >
+        <!-- Liste dynamique des posts -->
+          <ion-item class="text-wrap"style="font-size: 14px;" (click)="login()" style="padding: 15%;">
+            <ion-label>
+              <b>Connexion</b>
+            </ion-label>
+          </ion-item>
+ 
+      </ion-content>
+    </ion-menu>
+
+    <!-- Contenu principal -->
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

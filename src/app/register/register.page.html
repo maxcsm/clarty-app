@@ -1,0 +1,115 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Inscription</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  <ion-grid class="animate__animated animate__fadeInUp">
+    <ion-row class="ion-justify-content-center">
+
+        <ion-card class="register-card">
+
+    
+
+          <ion-card-content>
+            <form [formGroup]="onRegisterForm" (ngSubmit)="submitForm()" novalidate *ngIf="form0">
+
+              <!-- Email -->
+              <ion-item>
+                <ion-label position="floating">Email</ion-label>
+                <ion-input type="email" [(ngModel)]="email" formControlName="email"></ion-input>
+              </ion-item>
+
+              <!-- Nom & Prénom -->
+              <ion-row>
+                <ion-col>
+                  <ion-item>
+                    <ion-label position="floating">Nom</ion-label>
+                    <ion-input [(ngModel)]="lastname" formControlName="lastname"></ion-input>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-item>
+                    <ion-label position="floating">Prénom</ion-label>
+                    <ion-input [(ngModel)]="firstname" formControlName="firstname"></ion-input>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <!-- Adresse & CP -->
+              <ion-row>
+                <ion-col>
+                  <ion-item>
+                    <ion-label position="floating">Adresse</ion-label>
+                    <ion-input [(ngModel)]="address" formControlName="address"></ion-input>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+
+
+              <ion-row>
+                <ion-col>
+                  <ion-item>
+                    <ion-label position="floating">Code Postal</ion-label>
+                    <ion-input type="number" [(ngModel)]="cp" formControlName="cp"></ion-input>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <!-- Ville & Téléphone -->
+              <ion-row>
+                <ion-col>
+                  <ion-item>
+                    <ion-label position="floating">Ville</ion-label>
+                    <ion-input [(ngModel)]="city" formControlName="city"></ion-input>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+
+                <ion-row>
+                <ion-col>
+                  <ion-item>
+                    <ion-label position="floating">Téléphone</ion-label>
+                    <ion-input type="tel" [(ngModel)]="phone_mobile" formControlName="phone_mobile"></ion-input>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <!-- Mot de passe -->
+              <ion-item>
+                <ion-label position="floating">Mot de passe</ion-label>
+                <ion-input type="password" [(ngModel)]="password" formControlName="password"></ion-input>
+              </ion-item>
+
+              <!-- CGU -->
+              <ion-item lines="none">
+                <ion-checkbox slot="start" [(ngModel)]="check1" formControlName="check1"></ion-checkbox>
+                <ion-label>J'accepte les <a href="#">Conditions générales</a></ion-label>
+              </ion-item>
+
+              <!-- Info -->
+              <ion-text color="medium" class="ion-margin-top">
+                Vous recevrez un mot de passe par email pour vous connecter à votre espace.
+              </ion-text>
+
+              <!-- Bouton -->
+              <ion-button expand="block" type="submit" color="primary" class="ion-margin-top"
+                [disabled]="!onRegisterForm.valid">
+                Suivant
+              </ion-button>
+
+            </form>
+          </ion-card-content>
+        </ion-card>
+  
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar color="primary">
+
+    <ion-buttons slot="start">
+      <ion-menu-button ></ion-menu-button>
+    </ion-buttons>
+  
+    <ion-title>Clarty</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content [scrollEvents]="true" [fullscreen]="true" #scrollArea  id="chat-content" style="background-color: white;height: 100%;">
+<ion-row style="background-color: white !important; height: 100%;" >
+
+  
+<ion-col sizeLg="3" sizeMd="3" sizeXs="12" style="background-color: white !important">
+</ion-col>   
+<ion-col sizeLg="6" sizeMd="6" sizeXs="12" style="background-color: white !important; padding-bottom: 200px;">
+  <div style="background-color: white !important">
+    <div *ngFor="let msg of messages" [ngClass]="msg.sender">
+      <div class="message-bubble">
+        <div [innerHtml]="msg.text ">
+        </div>
+      </div>
+    </div>
+
+  <ion-spinner name="bubbles"  *ngIf="spinner==true"></ion-spinner>
+
+  </div>
+</ion-col>
+<ion-col sizeLg="3" sizeMd="" sizeXs="12" style="background-color: white !important">
+</ion-col>
+
+</ion-row>
+</ion-content>
+
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-input
+        [(ngModel)]="userInput"
+        placeholder="Votre question ici..."
+        (keyup.enter)="askAI()"
+      ></ion-input>
+      <ion-button slot="end" (click)="askAI()" color="secondary">Envoyer <ion-icon name="send"></ion-icon></ion-button>
+    </ion-item>
+  </ion-toolbar>
+</ion-footer>
+
+
+
+

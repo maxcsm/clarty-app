@@ -1,0 +1,94 @@
+{
+    
+    
+    "chooselanguage": "Choisir la langue",
+    "french": "Français",
+    "english": "Anglais",
+    "italian": "Italian",
+    "spanish": "Spanish",
+
+    "home": "Accueil",
+    "map": "Carte",
+    "list": "Points d'Intérêts",
+    "services": "Services",
+    "settings": "Infos",
+    "question": "Questions",
+    "boat": "Bateau",
+    "legal":"Mentions légales",
+    "modeemploi":"Mode d'emploi",
+    "modeemploi1":"Choisissez votre langue ",
+    "modeemploi2":"Cliquez sur Visiter ",
+    "modeemploi3":"Choisir votre point d'intérêts pour afficher sa description ",
+    "modeemploi4":"Voir la liste de tous les points d'intérêts ",
+    "modeemploi5":"Revenez sur la page d'accueil en cliquant sur l'icône en bas à gauche ",
+    "modeemploi6":"A chaque moment retournez au Menu Principal en cliquant sur l'icône en haut à gauche ",
+
+    "textintro": "Bienvenue à bord du bateau",
+    "textintro2": "Les outils d'IA peuvent être utilisés pour automatiser des tâches telles que la recherche de documents, la classification et l'organisation de fichiers",
+    "textintro3": "Croisière privée à Paris",
+    
+    "music_title":"Musique à volonté",
+    "security_title": "Sécurité",
+    "comment_title": "Commentaires",
+    "frigo_title":"Réfrigérateur",
+    "video_title":"Vidéo 360°",
+    "luggage_title":"Bagages",
+    "toilettes_title":"Toilettes à bord !",
+
+    "wifi_content": "Pour vous connectez au wifi avec un accés à Internet, sélectionnez le réseau parisboatclub et entrez le mot de passe suivant parisboatclub Et voilà ! Bonne croisiere !!",
+    "music_content":" Pour connecter votre mobile avec l'enceinte Bluetooth, activez le bluetooth et recherchez l'appareil nommé ETTORE",
+    "security_content": "Pour chaque personne,pour chaque age, taille et poids, nos gilets de sécurité sont présents. Pour toute personne qui le demande, ils sont à votre disposition",
+    "comment_content": "Pendant votre croisière,si vous le souhaitez, le skipper vous informera sur les ponts et monuments historiques que vous voyez sous lesquels vous passez",
+    "frigo_content":"Venez à bord avec de la nourriture et des boissons ! Notre refrigérateur les gardera au frais Pour les glaçons, en faire la demande au préalable",
+    "video_content":"Sur demande uniquement,il est possible de réaliser une courte vidéo de votre croisière. Elle vous sera ensuite envoyée par email",
+    "luggage_content":"Vous avez un train ou un avion à prendre juste aprés ? Pas de problème, nous pouvons garder vos valises en cabine sur le bateau pendant la croisière ! N'oubliez rien !",
+    "toilettes_content":"Toilettes à bord ! Pour naviguer l'esprit tranquille.",
+
+
+    "about_title":"A propos",
+    "about_content":"Paris Boat Club est heureux de partager avec vous sur cette plateforme les principaux et plus beaux Monuments et Ponts historiques de la ville de Paris vus depuis la Seine.Des détails, une anecdote sur les points rencontrés, tout ce qui vous permettra de prendre du plaisir à naviguer dans le centre de Paris et de garder un excellent souvenir de cette croisière balade sur la Seine.Si comme nous vous êtes passionnés de navigation, cette application à vocation à s'enrichir de vos remarques,  n'hésitez pas à nous laisser un message à info@parisboatclub.fr.",
+    "cgu_title":"Politique de confidentialité",
+
+    "callme": "Appelez-moi",
+    "sendmessage": "Whatsapp",
+    "askquestion": "Posez vos questions ? ",
+    "placequestion": "Votre question ici",
+
+    "loading": "Loading",
+    "profil": "Profil",
+    "successlogin": "Connection successfully",
+    "areyousure": "Are you sure ?",
+    "yes": "Yes",
+    "cancel": "Cancel",
+    "next": "Demander",
+    "close": "Fermer",
+    "tovisit": "Visiter",
+    "ourstairs": "Nos escales",
+    "otherstops": "Autres escales dans Paris",
+    "share": "Partager",
+    "note": "Noter l'app",
+    "myposition": "Ma position",
+
+
+
+    "escale_1_title": "Paris Boat Club - Escale de Beaugrenelle",
+    "escale_1_content": "L'escale de Beaugrenelle est située sous le pont de Grenelle,  en face de la Statue de la Liberté", 
+    "escale_2_title": "Paris Boat Club – Escale du Louvre", 
+    "escale_2_content": "L'escale du Louvre est située sous le pont du Carrousel, juste à côté de l’Escale Batobus du Louvre", 
+    "escale_3_title": "Paris Boat Club - Escale Henri IV",
+    "escale_3_content": "L'escale Henri IV se trouve sur le quai Henri IV",
+  
+    "boat_1":" Le Bateau ETTORE",
+    "boat_2":"Notre bateau navigue à Paris sur la Seine et peut transporter jusqu'à 10 personnes, skipper(s) inclus.",
+    "boat_3":"C'est un Jeanneau Camarat 7.5 CC Série 3.Il fait partie de la gamme hors-bord des bateaux Jeanneau. Sortie en 2022 avec des lignes très modernes. Il est parfaitement adapté pour la plaisance en mer ou en fluvial et permet de naviguer dans un confort parfait.Issu des coups de crayon du cabinet Sarrazin Design, il est équipé d’un T-top rigide avec montants en aluminium blanc. Une circulation fluide autour de la console permet des accès facilités et confortables à ces deux espaces.",
+    "boat_4":"La cabine Centrale intègre également des toilettes (WC) et peut accueillir des enfants en bas âge (maximum deux) et offre un espace permettant de s'évader un instant. A très vite !",
+
+    "shop":"La Boutique ParisBoatClub",
+    "pictures":"Photos ParisBoatClub",
+
+    "intro_escales":"Il est possible d’embarquer ou de débarquer depuis l’une de ces Escales, uniquement sur demande lors de la réservation.",
+
+    "geomap": "Souhaitez-vous géolocaliser votre position ?",
+"yes": "Oui",
+"no": "Non"
+    }
